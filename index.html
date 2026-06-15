@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GROVIS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+  <div class="card">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>GROVIS</h1>
+      <p>Monitoramento Climático — Pantanal</p>
+    </header>
+    <!-- Começando o main -->
+    <main class="layout">
+
+      <section aria-label="Pontos monitorados">
+        <ol class="points-list" id="points-list">
+
+          <li><article class="point" id="ponto-corumba">
+            <div>
+              <p class="point-name">Corumbá</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-corumba">🌡 --°C</span>
+              <span id="umidade-corumba">💧 --%</span>
+              <span id="vento-corumba">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Aquidauana</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-aquidauana">🌡 --°C</span>
+              <span id="umidade-aquidauana">💧 --%</span>
+              <span id="vento-aquidauana">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Miranda</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-miranda">🌡 --°C</span>
+              <span id="umidade-miranda">💧 --%</span>
+              <span id="vento-miranda">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Cáceres</p>
+              <p class="point-state">Mato Grosso</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-caceres">🌡 --°C</span>
+              <span id="umidade-caceres">💧 --%</span>
+              <span id="vento-caceres">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Poconé</p>
+              <p class="point-state">Mato Grosso</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-pocone">🌡 --°C</span>
+              <span id="umidade-pocone">💧 --%</span>
+              <span id="vento-pocone">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Barão de Melgaço</p>
+              <p class="point-state">Mato Grosso</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-barao-de-melgaco">🌡 --°C</span>
+              <span id="umidade-barao-de-melgaco">💧 --%</span>
+              <span id="vento-barao-de-melgaco">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Porto Jofre</p>
+              <p class="point-state">Mato Grosso</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-porto-jofre">🌡 --°C</span>
+              <span id="umidade-porto-jofre">💧 --%</span>
+              <span id="vento-porto-jofre">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Ladário</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-ladario">🌡 --°C</span>
+              <span id="umidade-ladario">💧 --%</span>
+              <span id="vento-ladario">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Bodoquena</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-bodoquena">🌡 --°C</span>
+              <span id="umidade-bodoquena">💧 --%</span>
+              <span id="vento-bodoquena">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+          <li><article class="point">
+            <div>
+              <p class="point-name">Anastácio</p>
+              <p class="point-state">Mato Grosso do Sul</p>
+            </div>
+            <div class="point-kpi">
+              <span id="temp-anastacio">🌡 --°C</span>
+              <span id="umidade-anastacio">💧 --%</span>
+              <span id="vento-anastacio">💨 -- km/h</span>
+            </div>
+          </article></li>
+
+        </ol>
+      </section>
+
+      <section aria-label="Mapa da região">
+        <div id="map">mapa aqui</div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Dados: OpenStreetMap / Nominatim &amp; Open-Meteo</p>
+    </footer>
+
+    
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

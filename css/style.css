@@ -1,0 +1,98 @@
+* { box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  min-height: 100vh;
+  background-color: #009548;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+  font-family: sans-serif;
+}
+
+ol { 
+  list-style: none; 
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 24px;
+}
+
+header { 
+  margin-bottom: 24px; 
+}
+
+header h1 { 
+  font-size: 1.8rem; 
+  color: #009548; 
+  margin-bottom: 4px; 
+
+}
+header p { 
+  font-size: 0.85rem; 
+  color: #666; 
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*dividindo a tela em dois espaços iguais */
+  gap: 16px;
+}
+
+.points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+article.point {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.point-name { 
+  font-size: 0.9rem; 
+  font-weight: 600; 
+}
+.point-state { 
+  font-size: 0.75rem; 
+  color: #888; 
+}
+
+.point-kpi {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #333;
+}
+
+.point-kpi span { 
+  display: block; 
+}
+
+#map {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 500px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.72rem;
+  color: #aaa;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .layout { grid-template-columns: 1fr; }
+}
