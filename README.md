@@ -1,9 +1,7 @@
-# Sprint 2 - APPLICATION DEVELOPMENT
-### Integrantes 
-Felipe Souza Carvalho | RM: 564779
-Gustavo Hackime Costa | RM: 563751  
-Luiz Henrique Macedo Graça | RM: 564704
-Riquelme Santos da Mata | RM: 565053
+# Grovis - Obtendo informações climáticas do Pantanal
+## Objetivo
+Uma empresa fictícia busca formas de monitorar áreas sujeita a risco. Esse projeto
+busca informar ao usuário as informações climáticas sobre lugares do Pantanal.
 
 ### Vídeo
 Link do vídeo: https://www.youtube.com/watch?v=opWUsmIZW2s
@@ -21,4 +19,7 @@ Link da API (OpenMeteo) para buscar informações climáticas de Corumbá: https
 Leaflet: https://leafletjs.com/examples/quick-start/
 
 Open-meteo: https://open-meteo.com/
+
+## Link do site
+https://r1qk.github.io/clima-pontos-geograficos/
 
