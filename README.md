@@ -1,6 +1,6 @@
 # Grovis - Obtendo informações climáticas do Pantanal
 ## Objetivo
-Uma empresa fictícia busca formas de monitorar áreas sujeita a risco. Esse projeto
+Uma empresa fictícia busca formas de monitorar áreas sujeitas a risco. Esse projeto
 busca informar ao usuário as informações climáticas sobre lugares do Pantanal.
 
 ### Vídeo
